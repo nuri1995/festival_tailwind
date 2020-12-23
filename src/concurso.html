@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="author" content="Núria Cruz" />
+        <link
+            rel="shortcut icon"
+            href="assets/images/logo.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+            rel="stylesheet"
+        />
+        <!-- do not remove this line! -->
+        <title>Subarashii Festival</title>
+    </head>
+    <body class="page">
+        <header class="header">
+            <nav class="bg-gray-800">
+                <div class="mx-auto py-3 px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between h-16">
+                        <div class="flex items-center">
+                            <a class="flex-shrink-0" href="index.html">
+                                <img
+                                    src="assets/images/logo.png"
+                                    class="h-14 w-14"
+                                    alt=""
+                                />
+                            </a>
+
+                            <div class="hidden lg:block">
+                                <div
+                                    class="navigation__title mx-4 my-0 flex items-baseline space-x-4 text-2xl"
+                                >
+                                    SUBARASHII FESTIVAL
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden lg:block">
+                            <div class="ml-4 flex items-center lg:ml-6">
+                                <div
+                                    class="ml-10 flex items-baseline space-x-4"
+                                >
+                                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                    <a
+                                        class="text-gray-400 hover:text-primary px-0 py-2 text-xl font-medium"
+                                        href="index.html"
+                                        >Home</a
+                                    >
+                                    <a
+                                        class="text-gray-400 hover:text-primary px-0 py-2 text-xl font-medium"
+                                        href="musica.html"
+                                        >DJ's Invitados</a
+                                    >
+                                    <a
+                                        class="text-gray-400 hover:text-primary px-0 py-2 text-xl font-medium"
+                                        href="actividades.html"
+                                        >Actividades</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="-mr-2 flex lg:hidden">
+                            <!-- Mobile menu button -->
+                            <button
+                                class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                            >
+                                <span class="sr-only">Open main menu</span>
+                                <!--
+              Heroicon name: menu
+
+              Menu open: "hidden", Menu closed: "block"
+            -->
+                                <svg
+                                    class="block h-6 w-6"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h16"
+                                    />
+                                </svg>
+                                <!--
+              Heroicon name: x
+
+              Menu open: "block", Menu closed: "hidden"
+            -->
+                                <svg
+                                    class="hidden h-6 w-6"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main
+            class="concurso pt-5 pb-9 text-white min-h-full bg-no-repeat bg-cover"
+        >
+            <div
+                class="concurso__contenido w-95c md:w-85c lg:w-70c xl:w-60c bg-white bg-opacity-20 px-7 pt-4 pb-8 rounded-3xl mx-auto"
+            >
+                <h1 class="concurso__title">CONCURSO DE COSPLAY</h1>
+                <p class="concurso__plazo text-lg mb-7">
+                    <i class="fas fa-exclamation-triangle"></i> Plazo de
+                    inscripción: del 1 de noviembre al 15 de diciembre de 2022.
+                </p>
+                <p class="concurso__plazo text-lg mb-7">
+                    <i class="far fa-question-circle"></i> Consulta las
+                    <a
+                        class="concurso__link text-secondary hover:text-primary hover:underline"
+                        href="actividades.html#bases"
+                        >BASES DEL CONCURSO</a
+                    >.
+                </p>
+                <h3 class="concurso__inscr">FORMULARIO DE INSCRIPCIÓN</h3>
+                <form
+                    class="form"
+                    name="concurso"
+                    method="POST"
+                    data-netlify="true"
+                >
+                    <fieldset class="form__fieldset">
+                        <p class="form__obl">
+                            <i>Todos los campos con * son obligatorios</i>
+                        </p>
+                        <div class="form__field">
+                            <label class="form__label block mb-2" for="name"
+                                >Nombre*</label
+                            >
+                            <input
+                                class="form__input block w-full py-1.5 px-3 mb-4 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-600"
+                                id="name"
+                                type="text"
+                                name="name"
+                                required
+                            />
+                        </div>
+                        <div class="form__field">
+                            <label
+                                class="form__label block mb-2"
+                                for="apellido1"
+                                >Primer apellido*</label
+                            >
+                            <input
+                                class="form__input block w-full py-1.5 px-3 mb-4 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-600"
+                                id="apellido1"
+                                type="text"
+                                name="apellido1"
+                                required
+                            />
+                        </div>
+                        <div class="form__field">
+                            <label
+                                class="form__label block mb-2"
+                                for="apellido2"
+                                >Segundo apellido</label
+                            >
+                            <input
+                                class="form__input block w-full py-1.5 px-3 mb-4 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-600"
+                                id="apellido2"
+                                type="text"
+                                name="apellido2"
+                            />
+                        </div>
+                        <div class="form__field">
+                            <label class="form__label block mb-2" for="email"
+                                >Correo electrónico*</label
+                            >
+                            <input
+                                class="form__input block w-full py-1.5 px-3 mb-4 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-600"
+                                id="email"
+                                type="text"
+                                name="email"
+                                required
+                            />
+                        </div>
+                        <div class="form__field">
+                            <label class="form__label block mb-2" for="telf"
+                                >Teléfono*</label
+                            >
+                            <input
+                                class="form__input block w-full py-1.5 px-3 mb-4 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-600"
+                                id="telf"
+                                type="text"
+                                name="telf"
+                                required
+                            />
+                        </div>
+                        <div class="form__field">
+                            <label class="form__label block mb-2" for="motivo"
+                                >Motivo del Cosplay* (Indicar personaje y serie
+                                a la que pertenece)</label
+                            >
+                            <input
+                                class="form__input block w-full py-1.5 px-3 mb-4 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-600"
+                                id="motivo"
+                                type="text"
+                                name="motivo"
+                                required
+                            />
+                        </div>
+                        <div class="form__field">
+                            <label class="form__label block mb-2" for="genero"
+                                >Género*</label
+                            >
+                            <select
+                                class="form__select block w-full py-2.5 px-3 mb-4 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-600"
+                                id="genero"
+                                name="genero"
+                                required
+                            >
+                                <option class="form__option" value="">
+                                    Género...
+                                </option>
+                                <option class="form__option">Manga</option>
+                                <option class="form__option">Anime</option>
+                                <option class="form__option">Cómic</option>
+                                <option class="form__option">Videojuego</option>
+                                <option class="form__option">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form__field mb-4">
+                            <label class="form__label block mb-2"
+                                >Modalidad*</label
+                            >
+                            <input
+                                class="form__input"
+                                type="radio"
+                                name="Modalidad"
+                                id="inlineRadio1"
+                                value="individual"
+                                checked
+                            />
+                            <label
+                                class="form__label-radio mr-3"
+                                for="inlineRadio1"
+                                >Individual</label
+                            >
+
+                            <input
+                                class="form__input"
+                                type="radio"
+                                name="Modalidad"
+                                id="inlineRadio1"
+                                value="grupal"
+                            />
+                            <label class="form__label-radio" for="inlineRadio1"
+                                >Grupal</label
+                            >
+                        </div>
+
+                        <div class="form__submit mx-auto text-center">
+                            <button
+                                class="form__button w-2/5 py-1.5 px-3 bg-secondary text-black border-2 border-solid border-white rounded-lg hover:bg-tertiary hover:border-tertiary"
+                                type="submit"
+                            >
+                                ENVIAR
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="info">
+                <div class="flex flex-wrap items-center">
+                    <div
+                        class="flex flex-grow flex-shrink justify-center px-3 info__col"
+                    >
+                        <span class="info__icon"
+                            ><i class="fas fa-calendar-alt"></i
+                        ></span>
+                        19 DE DICIEMBRE DE 2022
+                    </div>
+                    <div
+                        class="flex flex-grow flex-shrink justify-center px-3 info__col"
+                    >
+                        <span class="info__icon"
+                            ><i class="fas fa-clock"></i
+                        ></span>
+                        23:00 - 06:00
+                    </div>
+                    <div
+                        class="flex flex-grow flex-shrink justify-center px-3 info__col"
+                    >
+                        <span class="info__icon"
+                            ><i class="fas fa-map-marker-alt"></i
+                        ></span>
+                        SALA WOLF BARCELONA
+                    </div>
+                    <div
+                        class="flex flex-grow flex-shrink justify-center px-3 info__col"
+                    >
+                        <span class="info__icon"
+                            ><i class="fas fa-envelope"></i></span
+                        >CONTACTO@OTAKUMUSIC.COM
+                    </div>
+                </div>
+            </div>
+            <nav class="bg-gray-800">
+                <div class="mx-auto py-3 px-4 sm:px-6 lg:px-8">
+                    <div
+                        class="flex flex-col lg:flex-row items-center justify-between"
+                    >
+                        <div class="flex items-center navfooter__logolink">
+                            <a class="flex-shrink-0" href="index.html">
+                                <img
+                                    src="assets/images/logo.png"
+                                    class="h-14 w-14"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                        <div class="lg:block navfooter__list">
+                            <div class="flex items-center justify-center">
+                                <div
+                                    class="flex flex-col lg:flex-row items-baseline justify-center"
+                                >
+                                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+
+                                    <a
+                                        class="text-gray-400 hover:text-primary px-4 py-2 text-md mx-auto font-medium"
+                                        href="musica.html"
+                                        >DJ's Invitados</a
+                                    >
+
+                                    <a
+                                        class="text-gray-400 hover:text-primary px-4 py-2 text-md mx-auto font-medium"
+                                        href="actividades.html"
+                                        >Actividades</a
+                                    >
+                                    <a
+                                        class="text-gray-400 hover:text-primary px-4 py-2 text-md mx-auto font-medium"
+                                        href="concurso.html"
+                                        >Concurso de Cosplay</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:block navfooter__rrss">
+                            <div class="flex items-center">
+                                <div
+                                    class="flex mx-auto items-baseline space-x-4"
+                                >
+                                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+
+                                    <a
+                                        class="text-gray-400 hover:text-primary px-4 py-2 text-md font-medium"
+                                        href="#"
+                                        ><i class="fab fa-google-plus-g"></i
+                                    ></a>
+
+                                    <a
+                                        class="text-gray-400 hover:text-primary px-4 py-2 text-md font-medium"
+                                        href="actividades.html"
+                                        ><i class="fab fa-facebook-f"></i
+                                    ></a>
+                                    <a
+                                        class="text-gray-400 hover:text-primary px-4 py-2 text-md font-medium"
+                                        href="concurso.html"
+                                        ><i class="fab fa-twitter"></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="copyright">
+                <div class="my-0 bg-secondary copyright">
+                    <div class="mx-auto py-1 px-4 sm:px-6 lg:px-8">
+                        <p class="copyright__text">
+                            © 2020-2021 Núria Cruz Sanchez
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
+</html>

@@ -1,0 +1,113 @@
+@mixin tablet {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-family-titles;
+  color: $pink;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  color: $purple;
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.page {
+  font-family: $font-family-text;
+}
+
+.navigation__title {
+  color: $pink !important;
+  font-family: "Audiowide", cursive;
+  margin-top: 0.8rem;
+}
+
+.navigation__link {
+  font-size: 1.2rem;
+}
+
+.navigation__link:hover,
+.navfooter__link:hover {
+  color: $pink !important;
+}
+
+.info {
+  background-color: $pink;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.info__col {
+  border: 1px solid white;
+  align-items: center;
+}
+
+.info__icon {
+  margin-right: 5px;
+}
+
+.navfooter__logolink,
+.navfooter__list,
+.navfooter__rrss {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  text-align: center;
+}
+
+.navfooter__list {
+  flex-grow: 3;
+}
+
+.copyright {
+  align-content: center;
+  background-color: $purple;
+}
+
+.copyright__text {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #343a40;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.copyright__link {
+  color: #343a40;
+}
